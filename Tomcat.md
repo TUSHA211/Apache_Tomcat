@@ -2,19 +2,18 @@
 
 ## Table of Content
 
-1.APACHE TOMCAT	  
-2.Install JDK	  
-Step 1 — Installing JDK	  
-Step 2 – Check java version  
-3.Install Tomcat 9	  
-Step 1 — Creating a Tomcat user and group	  
-Step2 — Download and Install Tomcat 9	    
-Step 3 — Change Permission and Ownership of the Tomcat home directory	  
-Step 4 — Creating a SystemID Service File for Tomcat	  
-Step 5 — Enable and Secure Tomcat Web Application and Virtual Host Manager	  
-Step 6 — Configure Tomcat Web Application Manager	  
-Step 7 — Configure Tomcat Virtual Host Manager	
-
+* [APACHE TOMCAT](#1.APACHE-TOMCAT)
+* [Install JDK](#Install-JDK)	  
+  Step 1 — Installing JDK   
+  Step 2 – Check java version  
+* [Install Tomcat 9](#Install-Tomcat-9)	  
+  Step 1 — Creating a Tomcat user and group	  
+  Step 2 — Download and Install Tomcat 9	    
+  Step 3 — Change Permission and Ownership of the Tomcat home directory	  
+  Step 4 — Creating a SystemID Service File for Tomcat	  
+  Step 5 — Enable and Secure Tomcat Web Application and Virtual Host Manager	  
+  Step 6 — Configure Tomcat Web Application Manager	  
+  Step 7 — Configure Tomcat Virtual Host Manager	
 
 
 
@@ -87,6 +86,7 @@ After installation check, if java is installed correctly by executing below comm
 java  -version
 ``````
 **Output-**
+
 ``````  
 tusha@tusha:~$ java -version
 openjdk version "11.0.21" 2023-10-17
@@ -102,8 +102,8 @@ We should not run tomcat under the root user for security reasons. Let’s creat
 sudo groupadd tomcat
 sudo useradd -s /bin/false  -d /opt/tomcat tomcat
 ``````
-``````
 **Output-**  
+```
 tusha@tusha:~$ sudo groupadd tomcat
 [sudo] password for tusha:
 groupadd: group 'tomcat' already exists
@@ -137,7 +137,7 @@ apache-tomcat-9.0.21.tar.gz       	100%[========================================
 tusha@tusha:/opt$
 ``````
 
-A.Extract the tar package and rename the extracted directory to tomcat
+**A.** Extract the tar package and rename the extracted directory to tomcat
 ```
 sudo tar -xvzf apache-tomcat-9.0.21.tar.gz
 sudo mv apache-tomcat-9.0.21/* /opt/tomcat/
