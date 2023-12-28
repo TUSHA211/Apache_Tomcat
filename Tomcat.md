@@ -100,6 +100,8 @@ OpenJDK 64-Bit Server VM (build 11.0.21+9-post-Ubuntu-0ubuntu120.04, mixed mode,
 We should not run tomcat under the root user for security reasons. Let’s create a group tomcat and add a user tomcat to it. Additionally, we are going to install tomcat under /opt/tomcat directory which will be tomcat user home directory:
 ``````
 sudo groupadd tomcat
+````
+````
 sudo useradd -s /bin/false  -d /opt/tomcat tomcat
 ``````
 **Output-**  
