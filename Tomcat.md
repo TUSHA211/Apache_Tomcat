@@ -366,7 +366,7 @@ http://localhost:8080/manager/html
 
 The Tomcat virtual host manager is configured to allow access only from the localhost. To allow remote access we have to edit the
 ``````
-/opt/tomcat/webapps/host-manager/META-INF/context.xml
+sudo vim /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ``````
 This is not recommended for production environments.
 
